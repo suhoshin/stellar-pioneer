@@ -1,10 +1,8 @@
-# config/_default/params.yaml  ✅ 수정본
-
 # Appearance
 appearance:
   mode: system
   color: indigo
-  content_width: wide  # 선택사항: narrow|wide|full
+  content_width: wide  # narrow | wide | full 중 선택 가능
 
 # SEO
 marketing:
@@ -12,38 +10,29 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website.'
+    description: 'Personal academic website of Suho Shin.'
     twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''
-    baidu_tongji: ''
-    plausible: ''
-    fathom: ''
-    pirsch: ''
   verification:
     google: ''
-    baidu: ''
 
 # Site header
 header:
   navbar:
     enable: true
-    block: 'navbar'
     fixed_to_top: true
     show_search: true
-    show_theme_chooser: true
+    show_theme_chooser: false
     logo:
       text: 'Suho Shin'
 
 # Site footer
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} Suho Shin. All rights reserved.'
     license:
-      enable: true
-      allow_derivatives: false
-      share_alike: true
-      allow_commercial: false
+      enable: false
 
 # Localization
 locale:
@@ -57,7 +46,11 @@ features:
   privacy_pack:
     enable: false
 
-# ✅ 커스텀 CSS 등록 (여기로!)
-assets:
-  css:
-    - "css/custom.css"
+# ✅ 커스텀 CSS (선택사항 — 지금은 head-end 훅이 있으니 생략해도 됨)
+# assets:
+#   css:
+#     - "css/custom.css"
+
+# ✅ 홈을 _index.md 기반으로 강제 지정
+home:
+  type: page
