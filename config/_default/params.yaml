@@ -1,13 +1,10 @@
-# SITE SETUP
-# Guide: https://docs.hugoblox.com/tutorial/
-# Documentation: https://docs.hugoblox.com/
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+# config/_default/params.yaml  ✅ 수정본
 
 # Appearance
 appearance:
   mode: system
   color: indigo
-  content_width: wide
+  content_width: wide  # 선택사항: narrow|wide|full
 
 # SEO
 marketing:
@@ -59,7 +56,8 @@ features:
     enable: true
   privacy_pack:
     enable: false
-  features:
-  custom_css:
-    - "css/custom.css"
 
+# ✅ 커스텀 CSS 등록 (여기로!)
+assets:
+  css:
+    - "css/custom.css"

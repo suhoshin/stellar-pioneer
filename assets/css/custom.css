@@ -1,0 +1,17 @@
+/* 홈 섹션(Selected Publications) 폭 넓히기 */
+.home-section .container,
+.home-section .prose,
+.block-markdown .container,
+.block-markdown .prose,
+.article-container {
+  max-width: 1100px !important;   /* 원하는 값으로: 1000~1200px 권장 */
+  width: min(1100px, 92vw) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* 글머리 줄바꿈 덜 나도록 본문 줄 길이 조금 더 길게 */
+.block-markdown .prose p,
+.block-markdown .prose li {
+  max-width: none !important;
+}
