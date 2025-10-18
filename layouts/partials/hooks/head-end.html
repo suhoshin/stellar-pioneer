@@ -1,0 +1,23 @@
+<style>
+  /* 홈 섹션/마크다운/기사 컨테이너 폭 넓히기 */
+  .home-section .container,
+  .home-section .container-md,
+  .home-section .container-lg,
+  .home-section .container-xl,
+  .home-section .container-xxl,
+  .article-container {
+    max-width: 1100px !important;   /* 1000~1200px로 취향대로 */
+    width: min(1100px, 92vw) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* 마크다운 블록의 본문 줄 길이 제한 해제 */
+  .block-markdown .prose,
+  .block-markdown .prose p,
+  .block-markdown .prose li {
+    max-width: none !important;
+  }
+</style>
