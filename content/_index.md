@@ -86,9 +86,8 @@ sections:
         * **Power of Bonus in Pricing for Crowdsourcing**, [Sigmetrics'22](https://yung-web.github.io/home/Publication/Conference/PowerofBonus_Sigmetrics_2022.pdf)  
           * S. Shin, H. Choi, Y. Yi, J. Ok
     design:
-      spacing:
-        padding: [0, 0, 0, 0]
-      columns: 1
-      align: wide  
+      align: full         # 화면 폭 활용
+    advanced:
+      css_style: "max-width: 1100px; margin-left: auto; margin-right: auto;"
 
 ---

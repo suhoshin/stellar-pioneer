@@ -7,6 +7,7 @@
 appearance:
   mode: system
   color: indigo
+  content_width: wide
 
 # SEO
 marketing:
@@ -58,3 +59,7 @@ features:
     enable: true
   privacy_pack:
     enable: false
+  features:
+  custom_css:
+    - "css/custom.css"
+
